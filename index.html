@@ -1,68 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Mare Dan</h1>
-<img src="img.jpg" alt="test" width="100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <title>Mare Dan's CV</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<h2 id="job-title">Fullstack Developer</h2>
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="img.jpg" width="100" alt="test" />
+        </div>
+        <div id="header-info">
+          <h1>Mare Dan</h1>
+          <h2 id="job-title">
+            Software Developer
+          </h2>
+        </div>
+        <div>
+          <img
+            id="colorblind"
+            src="images/colorblind.png"
+            alt="colorblind"
+            height="24"
+            class="link"
+            title="Check Site for colorblind people"
+          />
+        </div>
+      </div>
 
-<p style="color: blue; text-align: right;">Welcome to my online CV</p>
+      <div id="text-carousel"></div>
 
-<ul id="top-menu-bar">
-    <li><a href="">Home</a></li>
-    <li><a href="">Skills</a></li>
-    <li><a href="">Languages</a></li>
-    <li><a href="">Contact</a></li>
+      <ul id="top-menu-bar">
+        <li><a href="#home" data-page="home">Home</a></li>
+        <li><a href="#skills" data-page="skills">Skills</a></li>
+        <li><a href="#projects" data-page="projects">Projects</a></li>
+        <li><a href="#languages" data-page="languages">Languages</a></li>
+      </ul>
+    </header>
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <h2>Contact Form</h2>
+          <form action="" id="contact-form">
+            <div class="form-row">
+              <label for="e">Email</label>
+              <input type="email" id="e" name="em" placeholder="example@job.com" />
+            </div>
+            <div class="form-row">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="nume" placeholder="Your name" />
+            </div>
+            <div class="actions">
+              <button type="submit">Contact Us</button>
+            </div>
+          </form>
+        </section>
 
-</ul>
+        <section>
+        </section>
+      </div>
 
+      <div id="main">
+        <div id="home" class="page" style="display: none">
+          <h2>Home</h2>
+          <p>
+            Hey there
+          </p>
+          <ol>
+          </ol>
+        </div>
 
+        <div id="skills" class="page" style="display: none">
+          <h2>Skills & Endorcements</h2>
+          <ul></ul>
+        </div>
 
-<div>
-    <h2>Skills</h2>
-    <ul>
-        <li class="favorite">
-            HTML
-        </li>
-        <li>
-            CSS
-        </li>
-        <li class="favorite">
-            JS
-        </li>
-    </ul>
-</div>
-<h2>Know Languages</h2>
-<table>
-    <tr>
-        <td>Romanian</td>
-        <td>Native</td>
-    </tr>
-    <tr>
-        <td>English</td>
-        <td>Professional</td>
-    </tr>
-</table>
+        <div id="projects" class="page" style="display: none">
+          <h2>Projects</h2>
+        </div>
 
-<a href="http://google.com">Google</a>
+        <div id="languages" class="page" style="display: none">
+          <h2>Known Languages</h2>
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td>Romanian</td>
+              <td>Native or bilingual proficiency</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Professional working proficiency</td>
+            </tr>
+            <tr>
+              <td>Russian</td>
+              <td>Elementary proficiency</td>
+            </tr>
+            <tr>
+              <td>Italian</td>
+              <td>Elementary proficiency</td>
+            </tr>
+            <tr>
+              <td>"Java Script"</td>
+              <td>Full professional proficiency</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
 
-<form action="" method="get">
-    <div>
-        <label for="contactEmail">Enter your email</label>
-        <input type="email" name="contactEmail" id="email" placeholder="Email" required>
-    </div>
-    <div>
-        <label for="name">Enter your name</label>
-        <input type="text" name="name" id="contactName">
-    </div>
-    <button type="submit">Contact <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></button>   
-</form>
-</body>
+    <script src="functions.js"></script>
+    <script src="js/gradient-text.js"></script>
+  </body>
 </html>
